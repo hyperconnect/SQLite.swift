@@ -46,7 +46,7 @@
 		DCC6B3A71A91974B00734B78 /* FunctionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC3F17121A814F7000C83A2F /* FunctionsTests.swift */; };
 		DCC6B3A81A91975700734B78 /* Functions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC3F170F1A8127A300C83A2F /* Functions.swift */; };
 		DCC6B3A91A91975C00734B78 /* Functions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC3F170F1A8127A300C83A2F /* Functions.swift */; };
-		DCC6B3AC1A91979F00734B78 /* SQLite.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCC6B3801A9191C300734B78 /* SQLite.framework */; };
+		DCC6B3AC1A91979F00734B78 /* SQLiteCipher.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCC6B3801A9191C300734B78 /* SQLiteCipher.framework */; };
 		DCC6B3AD1A9197B500734B78 /* TestHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCF37F8719DDAF79001534AA /* TestHelper.swift */; };
 		DCF37F8219DDAC2D001534AA /* DatabaseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCF37F8119DDAC2D001534AA /* DatabaseTests.swift */; };
 		DCF37F8519DDAF3F001534AA /* StatementTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCF37F8419DDAF3F001534AA /* StatementTests.swift */; };
@@ -127,7 +127,7 @@
 		DCAFEAD61AABEFA7000C21A1 /* FTSTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FTSTests.swift; sourceTree = "<group>"; };
 		DCBE28401ABDF18F0042A3FC /* RTree.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RTree.swift; sourceTree = "<group>"; };
 		DCBE28441ABDF2A80042A3FC /* RTreeTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RTreeTests.swift; sourceTree = "<group>"; };
-		DCC6B3801A9191C300734B78 /* SQLite.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SQLite.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DCC6B3801A9191C300734B78 /* SQLiteCipher.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SQLiteCipher.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DCC6B3921A9191D100734B78 /* SQLiteCipher Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "SQLiteCipher Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DCC6B3961A91938F00734B78 /* sqlcipher.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = sqlcipher.xcodeproj; path = Vendor/sqlcipher/sqlcipher.xcodeproj; sourceTree = "<group>"; };
 		DCC6B3A31A9194A800734B78 /* Cipher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Cipher.swift; sourceTree = "<group>"; };
@@ -167,7 +167,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DCC6B3AC1A91979F00734B78 /* SQLite.framework in Frameworks */,
+				DCC6B3AC1A91979F00734B78 /* SQLiteCipher.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -234,7 +234,7 @@
 			children = (
 				DC3773F319C8CBB3004FCF85 /* SQLite.framework */,
 				DC3773FE19C8CBB3004FCF85 /* SQLite Tests.xctest */,
-				DCC6B3801A9191C300734B78 /* SQLite.framework */,
+				DCC6B3801A9191C300734B78 /* SQLiteCipher.framework */,
 				DCC6B3921A9191D100734B78 /* SQLiteCipher Tests.xctest */,
 			);
 			name = Products;
@@ -371,7 +371,7 @@
 			);
 			name = SQLiteCipher;
 			productName = SQLite;
-			productReference = DCC6B3801A9191C300734B78 /* SQLite.framework */;
+			productReference = DCC6B3801A9191C300734B78 /* SQLiteCipher.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		DCC6B3821A9191D100734B78 /* SQLiteCipher Tests */ = {
@@ -594,7 +594,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
-				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_MODULE_NAME = "$(PRODUCT_NAME:c99extidentifier)";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -630,7 +630,7 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_MODULE_NAME = "$(PRODUCT_NAME:c99extidentifier)";
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -711,7 +711,7 @@
 				INFOPLIST_FILE = SQLite/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = SQLite;
+				PRODUCT_NAME = $TARGET_NAME;
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
@@ -733,7 +733,7 @@
 				INFOPLIST_FILE = SQLite/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = SQLite;
+				PRODUCT_NAME = $TARGET_NAME;
 				SKIP_INSTALL = YES;
 			};
 			name = Release;
