@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "DCC6B36D1A9191C300734B78"
-               BuildableName = "SQLite.framework"
+               BuildableName = "SQLiteCipher.framework"
                BlueprintName = "SQLiteCipher"
                ReferencedContainer = "container:SQLite.xcodeproj">
             </BuildableReference>
@@ -43,7 +43,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "DCC6B36D1A9191C300734B78"
-            BuildableName = "SQLite.framework"
+            BuildableName = "SQLiteCipher.framework"
             BlueprintName = "SQLiteCipher"
             ReferencedContainer = "container:SQLite.xcodeproj">
          </BuildableReference>
@@ -62,7 +62,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "DCC6B36D1A9191C300734B78"
-            BuildableName = "SQLite.framework"
+            BuildableName = "SQLiteCipher.framework"
             BlueprintName = "SQLiteCipher"
             ReferencedContainer = "container:SQLite.xcodeproj">
          </BuildableReference>
@@ -80,7 +80,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "DCC6B36D1A9191C300734B78"
-            BuildableName = "SQLite.framework"
+            BuildableName = "SQLiteCipher.framework"
             BlueprintName = "SQLiteCipher"
             ReferencedContainer = "container:SQLite.xcodeproj">
          </BuildableReference>
